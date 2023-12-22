@@ -1,4 +1,5 @@
 # 🤖 Web Scraping y Visualización de la Inflación Argentina
+## 🎯 Objetivo
 Este proyecto utiliza Python para extraer datos de la inflación mensual de Argentina desde la página web del Banco Central de la República Argentina (BCRA), y luego los visualiza con gráficos de matplotlib y seaborn.
 
 ## 📚 Importación de librerías
@@ -19,11 +20,11 @@ El proceso de web scraping consiste en los siguientes pasos:
 - Extraer el contenido HTML de la tabla y cerrar el navegador.
 - Convertir el HTML en un dataframe de pandas, ajustando el formato de los números y las fechas.
 
-# 📊 Manipulación
+## 📊 Manipulación
 - Se convierte la columna “Fecha” en el índice del dataframe, y se cambia el formato a mes-año (por ejemplo, Ene-21).
 - Se calcula la inflación acumulada como el producto de los valores mensuales más uno.
 
-📈 Visualización
+## 📈 Visualización
 - Un gráfico de barras que muestra la inflación mensual. Veremos también una advertencia sobre su lectura.
 - Un gráfico de líneas que muestra la inflación acumulada, con una escala lineal que refleja el crecimiento exponencial de los precios.
 - Un gráfico de líneas que muestra la inflación acumulada, con una escala logarítmica que suaviza el crecimiento y facilita la comparación de los periodos.
